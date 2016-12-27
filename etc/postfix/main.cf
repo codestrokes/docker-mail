@@ -1,5 +1,5 @@
-smtpd_tls_cert_file = /private/ssl/server.crt
-smtpd_tls_key_file = /private/ssl/server.key
+smtpd_tls_cert_file = /private/cert.pem
+smtpd_tls_key_file = /private/key.pem
 # smtpd_tls_CAfile = /private/ssl/ca.pem
 smtpd_tls_auth_only = yes
 
