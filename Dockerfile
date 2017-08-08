@@ -40,6 +40,10 @@ RUN mkdir /data \
     && touch /data/virtual
 VOLUME /data
 
+# Dummy certificates for Let's Encrypt
+RUN mkdir /private \
+    && echo -n > /private/cert.pem > /private/key.pem
+
 # Expose mail port (SMTP, IMAP and ManageSieve)
 EXPOSE 25
 EXPOSE 143
